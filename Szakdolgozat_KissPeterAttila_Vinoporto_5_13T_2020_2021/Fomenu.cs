@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
 {
-    public partial class Kezdolap : Form
+    public partial class Fomenu : Form
     {
-        public Kezdolap()
+        public Fomenu()
         {
             InitializeComponent();
+        }
+
+        private void fomenu_exit_btn_Click(object sender, EventArgs e)
+        {
+           this.Close();
+            
+            kezdolap kezdolapForm = new kezdolap();
+
+            kezdolapForm.Show();
         }
     }
 }

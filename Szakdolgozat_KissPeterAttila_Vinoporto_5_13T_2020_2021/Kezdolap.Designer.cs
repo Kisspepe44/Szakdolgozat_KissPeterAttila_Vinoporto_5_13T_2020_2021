@@ -1,6 +1,6 @@
 ﻿namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
 {
-    partial class Kezdolap
+    partial class kezdolap
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kezdolap));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kezdolap));
             this.kl_kikep_btn = new System.Windows.Forms.Button();
             this.kl_tovabb_btn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -46,6 +46,7 @@
             this.kl_kikep_btn.TabIndex = 0;
             this.kl_kikep_btn.Text = "Kilépés!";
             this.kl_kikep_btn.UseVisualStyleBackColor = false;
+            this.kl_kikep_btn.Click += new System.EventHandler(this.kl_kikep_btn_Click);
             // 
             // kl_tovabb_btn
             // 
@@ -58,18 +59,19 @@
             this.kl_tovabb_btn.TabIndex = 1;
             this.kl_tovabb_btn.Text = "Tovább!";
             this.kl_tovabb_btn.UseVisualStyleBackColor = false;
+            this.kl_tovabb_btn.Click += new System.EventHandler(this.kl_tovabb_btn_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(475, 238);
+            this.pictureBox1.Location = new System.Drawing.Point(476, 263);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(300, 100);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // Kezdolap
+            // kezdolap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -78,8 +80,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.kl_tovabb_btn);
             this.Controls.Add(this.kl_kikep_btn);
-            this.Name = "Kezdolap";
+            this.Name = "kezdolap";
             this.Text = "Kezdőlap";
+            this.Load += new System.EventHandler(this.Kezdolap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
