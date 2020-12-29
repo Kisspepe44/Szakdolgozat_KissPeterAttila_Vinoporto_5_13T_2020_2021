@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
 {
-    public partial class Form1 : Form
+    public partial class Kezdolap : Form
     {
-        public Form1()
+        public Kezdolap()
         {
             InitializeComponent();
         }

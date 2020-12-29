@@ -16,7 +16,7 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Kezdolap());
         }
     }
 }
