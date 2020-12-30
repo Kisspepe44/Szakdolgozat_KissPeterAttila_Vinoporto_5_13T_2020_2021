@@ -89,6 +89,7 @@
             this.fomenu_termek_btn.Text = "Termék Ajánló";
             this.fomenu_termek_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.fomenu_termek_btn.UseVisualStyleBackColor = false;
+            this.fomenu_termek_btn.Click += new System.EventHandler(this.fomenu_termek_btn_Click);
             // 
             // fomenu_honlap_btn
             // 
