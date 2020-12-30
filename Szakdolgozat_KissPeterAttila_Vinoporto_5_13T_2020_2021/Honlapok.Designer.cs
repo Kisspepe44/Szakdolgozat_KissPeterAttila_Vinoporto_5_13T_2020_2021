@@ -33,6 +33,10 @@
             this.lb_honlapok = new System.Windows.Forms.Label();
             this.fomenu_exit_btn = new System.Windows.Forms.Button();
             this.honlapok_fomenu_btn = new System.Windows.Forms.Button();
+            this.honlapok_italpincer_btn = new System.Windows.Forms.Button();
+            this.honlapok_sos_btn = new System.Windows.Forms.Button();
+            this.honlapok_ph_btn = new System.Windows.Forms.Button();
+            this.honlap_berugok_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.honlapokvonal)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,6 +85,58 @@
             this.honlapok_fomenu_btn.TabIndex = 8;
             this.honlapok_fomenu_btn.Text = "Főmenü";
             this.honlapok_fomenu_btn.UseVisualStyleBackColor = false;
+            this.honlapok_fomenu_btn.Click += new System.EventHandler(this.honlapok_fomenu_btn_Click);
+            // 
+            // honlapok_italpincer_btn
+            // 
+            this.honlapok_italpincer_btn.BackColor = System.Drawing.Color.Transparent;
+            this.honlapok_italpincer_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.honlapok_italpincer_btn.Image = ((System.Drawing.Image)(resources.GetObject("honlapok_italpincer_btn.Image")));
+            this.honlapok_italpincer_btn.Location = new System.Drawing.Point(25, 72);
+            this.honlapok_italpincer_btn.Name = "honlapok_italpincer_btn";
+            this.honlapok_italpincer_btn.Size = new System.Drawing.Size(603, 272);
+            this.honlapok_italpincer_btn.TabIndex = 9;
+            this.honlapok_italpincer_btn.UseVisualStyleBackColor = false;
+            this.honlapok_italpincer_btn.Click += new System.EventHandler(this.honlapok_italpincer_btn_Click);
+            // 
+            // honlapok_sos_btn
+            // 
+            this.honlapok_sos_btn.BackColor = System.Drawing.Color.Transparent;
+            this.honlapok_sos_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.honlapok_sos_btn.Image = ((System.Drawing.Image)(resources.GetObject("honlapok_sos_btn.Image")));
+            this.honlapok_sos_btn.Location = new System.Drawing.Point(634, 72);
+            this.honlapok_sos_btn.Name = "honlapok_sos_btn";
+            this.honlapok_sos_btn.Size = new System.Drawing.Size(603, 272);
+            this.honlapok_sos_btn.TabIndex = 10;
+            this.honlapok_sos_btn.UseVisualStyleBackColor = false;
+            this.honlapok_sos_btn.Click += new System.EventHandler(this.honlapok_sos_btn_Click);
+            // 
+            // honlapok_ph_btn
+            // 
+            this.honlapok_ph_btn.BackColor = System.Drawing.Color.Transparent;
+            this.honlapok_ph_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.honlapok_ph_btn.Font = new System.Drawing.Font("Segoe Print", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.honlapok_ph_btn.ForeColor = System.Drawing.Color.DarkRed;
+            this.honlapok_ph_btn.Image = ((System.Drawing.Image)(resources.GetObject("honlapok_ph_btn.Image")));
+            this.honlapok_ph_btn.Location = new System.Drawing.Point(25, 350);
+            this.honlapok_ph_btn.Name = "honlapok_ph_btn";
+            this.honlapok_ph_btn.Size = new System.Drawing.Size(603, 272);
+            this.honlapok_ph_btn.TabIndex = 11;
+            this.honlapok_ph_btn.Text = "Partyhordó";
+            this.honlapok_ph_btn.UseVisualStyleBackColor = false;
+            this.honlapok_ph_btn.Click += new System.EventHandler(this.honlapok_ph_btn_Click);
+            // 
+            // honlap_berugok_btn
+            // 
+            this.honlap_berugok_btn.BackColor = System.Drawing.Color.Transparent;
+            this.honlap_berugok_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.honlap_berugok_btn.Image = ((System.Drawing.Image)(resources.GetObject("honlap_berugok_btn.Image")));
+            this.honlap_berugok_btn.Location = new System.Drawing.Point(634, 350);
+            this.honlap_berugok_btn.Name = "honlap_berugok_btn";
+            this.honlap_berugok_btn.Size = new System.Drawing.Size(603, 272);
+            this.honlap_berugok_btn.TabIndex = 12;
+            this.honlap_berugok_btn.UseVisualStyleBackColor = false;
+            this.honlap_berugok_btn.Click += new System.EventHandler(this.honlap_berugok_btn_Click);
             // 
             // Honlapok
             // 
@@ -88,6 +144,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.honlap_berugok_btn);
+            this.Controls.Add(this.honlapok_ph_btn);
+            this.Controls.Add(this.honlapok_sos_btn);
+            this.Controls.Add(this.honlapok_italpincer_btn);
             this.Controls.Add(this.honlapok_fomenu_btn);
             this.Controls.Add(this.fomenu_exit_btn);
             this.Controls.Add(this.lb_honlapok);
@@ -105,5 +165,9 @@
         private System.Windows.Forms.Label lb_honlapok;
         private System.Windows.Forms.Button fomenu_exit_btn;
         private System.Windows.Forms.Button honlapok_fomenu_btn;
+        private System.Windows.Forms.Button honlapok_italpincer_btn;
+        private System.Windows.Forms.Button honlapok_sos_btn;
+        private System.Windows.Forms.Button honlapok_ph_btn;
+        private System.Windows.Forms.Button honlap_berugok_btn;
     }
 }
