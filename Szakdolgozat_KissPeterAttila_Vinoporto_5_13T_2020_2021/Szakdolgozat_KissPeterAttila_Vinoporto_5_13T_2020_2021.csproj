@@ -52,6 +52,12 @@
     <Compile Include="Fomenu.Designer.cs">
       <DependentUpon>Fomenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Honlapok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Honlapok.Designer.cs">
+      <DependentUpon>Honlapok.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kezdolap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Fomenu.resx">
       <DependentUpon>Fomenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Honlapok.resx">
+      <DependentUpon>Honlapok.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kezdolap.resx">
       <DependentUpon>Kezdolap.cs</DependentUpon>

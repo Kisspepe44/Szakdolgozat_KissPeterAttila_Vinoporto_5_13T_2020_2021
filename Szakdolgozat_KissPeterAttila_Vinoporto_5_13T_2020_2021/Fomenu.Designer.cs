@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fomenu));
             this.fomenuvonal = new System.Windows.Forms.PictureBox();
             this.lb_fomenu = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.fomenu_futar_btn = new System.Windows.Forms.Button();
+            this.fomenu_termek_btn = new System.Windows.Forms.Button();
+            this.fomenu_honlap_btn = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.fomenu_exit_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fomenuvonal)).BeginInit();
@@ -58,52 +58,53 @@
             this.lb_fomenu.TabIndex = 1;
             this.lb_fomenu.Text = "Főmenü";
             // 
-            // button1
+            // fomenu_futar_btn
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe Print", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(54, 71);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(569, 289);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Futár elszámolás";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = false;
+            this.fomenu_futar_btn.BackColor = System.Drawing.Color.Transparent;
+            this.fomenu_futar_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fomenu_futar_btn.Font = new System.Drawing.Font("Segoe Print", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.fomenu_futar_btn.ForeColor = System.Drawing.Color.Black;
+            this.fomenu_futar_btn.Image = ((System.Drawing.Image)(resources.GetObject("fomenu_futar_btn.Image")));
+            this.fomenu_futar_btn.Location = new System.Drawing.Point(54, 71);
+            this.fomenu_futar_btn.Name = "fomenu_futar_btn";
+            this.fomenu_futar_btn.Size = new System.Drawing.Size(569, 289);
+            this.fomenu_futar_btn.TabIndex = 2;
+            this.fomenu_futar_btn.Text = "Futár elszámolás";
+            this.fomenu_futar_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.fomenu_futar_btn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // fomenu_termek_btn
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe Print", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(640, 71);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(569, 289);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Termék Ajánló";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = false;
+            this.fomenu_termek_btn.BackColor = System.Drawing.Color.Transparent;
+            this.fomenu_termek_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fomenu_termek_btn.Font = new System.Drawing.Font("Segoe Print", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.fomenu_termek_btn.ForeColor = System.Drawing.Color.Black;
+            this.fomenu_termek_btn.Image = ((System.Drawing.Image)(resources.GetObject("fomenu_termek_btn.Image")));
+            this.fomenu_termek_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.fomenu_termek_btn.Location = new System.Drawing.Point(640, 71);
+            this.fomenu_termek_btn.Name = "fomenu_termek_btn";
+            this.fomenu_termek_btn.Size = new System.Drawing.Size(569, 289);
+            this.fomenu_termek_btn.TabIndex = 3;
+            this.fomenu_termek_btn.Text = "Termék Ajánló";
+            this.fomenu_termek_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.fomenu_termek_btn.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // fomenu_honlap_btn
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe Print", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(54, 372);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(569, 289);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Honlapok";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = false;
+            this.fomenu_honlap_btn.BackColor = System.Drawing.Color.Transparent;
+            this.fomenu_honlap_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fomenu_honlap_btn.Font = new System.Drawing.Font("Segoe Print", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.fomenu_honlap_btn.ForeColor = System.Drawing.Color.Black;
+            this.fomenu_honlap_btn.Image = ((System.Drawing.Image)(resources.GetObject("fomenu_honlap_btn.Image")));
+            this.fomenu_honlap_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.fomenu_honlap_btn.Location = new System.Drawing.Point(54, 372);
+            this.fomenu_honlap_btn.Name = "fomenu_honlap_btn";
+            this.fomenu_honlap_btn.Size = new System.Drawing.Size(569, 289);
+            this.fomenu_honlap_btn.TabIndex = 4;
+            this.fomenu_honlap_btn.Text = "Honlapok";
+            this.fomenu_honlap_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.fomenu_honlap_btn.UseVisualStyleBackColor = false;
+            this.fomenu_honlap_btn.Click += new System.EventHandler(this.fomenu_honlap_btn_Click);
             // 
             // button4
             // 
@@ -142,9 +143,9 @@
             this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.fomenu_exit_btn);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.fomenu_honlap_btn);
+            this.Controls.Add(this.fomenu_termek_btn);
+            this.Controls.Add(this.fomenu_futar_btn);
             this.Controls.Add(this.lb_fomenu);
             this.Controls.Add(this.fomenuvonal);
             this.Name = "Fomenu";
@@ -158,9 +159,9 @@
 
         private System.Windows.Forms.PictureBox fomenuvonal;
         private System.Windows.Forms.Label lb_fomenu;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button fomenu_futar_btn;
+        private System.Windows.Forms.Button fomenu_termek_btn;
+        private System.Windows.Forms.Button fomenu_honlap_btn;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button fomenu_exit_btn;
     }
