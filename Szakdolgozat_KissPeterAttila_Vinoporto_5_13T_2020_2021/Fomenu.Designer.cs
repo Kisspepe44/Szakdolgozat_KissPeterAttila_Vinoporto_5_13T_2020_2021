@@ -72,6 +72,7 @@
             this.fomenu_futar_btn.Text = "Futár elszámolás";
             this.fomenu_futar_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.fomenu_futar_btn.UseVisualStyleBackColor = false;
+            this.fomenu_futar_btn.Click += new System.EventHandler(this.fomenu_futar_btn_Click);
             // 
             // fomenu_termek_btn
             // 
@@ -149,6 +150,7 @@
             this.Controls.Add(this.lb_fomenu);
             this.Controls.Add(this.fomenuvonal);
             this.Name = "Fomenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fomenu";
             ((System.ComponentModel.ISupportInitialize)(this.fomenuvonal)).EndInit();
             this.ResumeLayout(false);

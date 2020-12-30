@@ -34,5 +34,14 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
 
             honlapForm.Show();
         }
+
+        private void fomenu_futar_btn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+           Futar futarForm = new Futar();
+
+           futarForm.Show();
+        }
     }
 }

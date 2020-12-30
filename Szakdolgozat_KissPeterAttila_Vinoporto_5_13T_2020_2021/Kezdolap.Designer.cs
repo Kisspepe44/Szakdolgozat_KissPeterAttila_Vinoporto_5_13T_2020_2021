@@ -81,6 +81,7 @@
             this.Controls.Add(this.kl_tovabb_btn);
             this.Controls.Add(this.kl_kikep_btn);
             this.Name = "kezdolap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kezdőlap";
             this.Load += new System.EventHandler(this.Kezdolap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

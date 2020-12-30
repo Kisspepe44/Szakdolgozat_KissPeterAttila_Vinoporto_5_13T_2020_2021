@@ -153,6 +153,7 @@
             this.Controls.Add(this.lb_honlapok);
             this.Controls.Add(this.honlapokvonal);
             this.Name = "Honlapok";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Honlapok";
             ((System.ComponentModel.ISupportInitialize)(this.honlapokvonal)).EndInit();
             this.ResumeLayout(false);
