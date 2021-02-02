@@ -98,6 +98,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Termek.resx">
       <DependentUpon>Termek.cs</DependentUpon>
@@ -114,6 +115,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\back-1689836_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\back-1689836_128022.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\shop4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

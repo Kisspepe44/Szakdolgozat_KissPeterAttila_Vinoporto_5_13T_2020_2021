@@ -80,6 +80,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.kl_tovabb_btn);
             this.Controls.Add(this.kl_kikep_btn);
+            this.MaximumSize = new System.Drawing.Size(1280, 720);
+            this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "kezdolap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kezdőlap";

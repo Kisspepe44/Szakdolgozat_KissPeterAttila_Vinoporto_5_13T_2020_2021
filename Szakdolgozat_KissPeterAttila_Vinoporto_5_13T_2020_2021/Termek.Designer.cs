@@ -32,7 +32,6 @@
             this.Termekvonal = new System.Windows.Forms.PictureBox();
             this.lb_termek = new System.Windows.Forms.Label();
             this.termek_fomenu_btn = new System.Windows.Forms.Button();
-            this.termek_exit_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Termekvonal)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,27 +60,13 @@
             this.termek_fomenu_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.termek_fomenu_btn.Font = new System.Drawing.Font("Segoe Print", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.termek_fomenu_btn.ForeColor = System.Drawing.Color.White;
-            this.termek_fomenu_btn.Location = new System.Drawing.Point(12, 4);
+            this.termek_fomenu_btn.Location = new System.Drawing.Point(12, 1);
             this.termek_fomenu_btn.Name = "termek_fomenu_btn";
-            this.termek_fomenu_btn.Size = new System.Drawing.Size(153, 42);
+            this.termek_fomenu_btn.Size = new System.Drawing.Size(146, 45);
             this.termek_fomenu_btn.TabIndex = 9;
             this.termek_fomenu_btn.Text = "Főmenü";
             this.termek_fomenu_btn.UseVisualStyleBackColor = false;
             this.termek_fomenu_btn.Click += new System.EventHandler(this.honlapok_fomenu_btn_Click);
-            // 
-            // termek_exit_btn
-            // 
-            this.termek_exit_btn.BackColor = System.Drawing.Color.Transparent;
-            this.termek_exit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.termek_exit_btn.Font = new System.Drawing.Font("Script MT Bold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.termek_exit_btn.ForeColor = System.Drawing.Color.Black;
-            this.termek_exit_btn.Location = new System.Drawing.Point(1212, 4);
-            this.termek_exit_btn.Name = "termek_exit_btn";
-            this.termek_exit_btn.Size = new System.Drawing.Size(38, 42);
-            this.termek_exit_btn.TabIndex = 10;
-            this.termek_exit_btn.Text = "X";
-            this.termek_exit_btn.UseVisualStyleBackColor = false;
-            this.termek_exit_btn.Click += new System.EventHandler(this.termek_exit_btn_Click);
             // 
             // Termek
             // 
@@ -89,10 +74,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1262, 673);
-            this.Controls.Add(this.termek_exit_btn);
             this.Controls.Add(this.termek_fomenu_btn);
             this.Controls.Add(this.lb_termek);
             this.Controls.Add(this.Termekvonal);
+            this.MaximumSize = new System.Drawing.Size(1280, 720);
+            this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "Termek";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Termek";
@@ -106,6 +92,5 @@
         private System.Windows.Forms.PictureBox Termekvonal;
         private System.Windows.Forms.Label lb_termek;
         private System.Windows.Forms.Button termek_fomenu_btn;
-        private System.Windows.Forms.Button termek_exit_btn;
     }
 }

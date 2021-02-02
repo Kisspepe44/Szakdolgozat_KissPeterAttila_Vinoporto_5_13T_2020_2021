@@ -114,11 +114,13 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Segoe Print", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.Image = global::Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021.Properties.Resources.shop4;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button4.Location = new System.Drawing.Point(640, 372);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(569, 289);
             this.button4.TabIndex = 5;
-            this.button4.Text = "egyéb majd";
+            this.button4.Text = "Kosár";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.UseVisualStyleBackColor = false;
             // 
@@ -127,12 +129,12 @@
             this.fomenu_exit_btn.BackColor = System.Drawing.Color.Transparent;
             this.fomenu_exit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fomenu_exit_btn.Font = new System.Drawing.Font("Script MT Bold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fomenu_exit_btn.ForeColor = System.Drawing.Color.Black;
-            this.fomenu_exit_btn.Location = new System.Drawing.Point(1212, 4);
+            this.fomenu_exit_btn.ForeColor = System.Drawing.Color.Transparent;
+            this.fomenu_exit_btn.Image = global::Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021.Properties.Resources.back_1689836_128022;
+            this.fomenu_exit_btn.Location = new System.Drawing.Point(12, 4);
             this.fomenu_exit_btn.Name = "fomenu_exit_btn";
             this.fomenu_exit_btn.Size = new System.Drawing.Size(38, 42);
             this.fomenu_exit_btn.TabIndex = 6;
-            this.fomenu_exit_btn.Text = "X";
             this.fomenu_exit_btn.UseVisualStyleBackColor = false;
             this.fomenu_exit_btn.Click += new System.EventHandler(this.fomenu_exit_btn_Click);
             // 
@@ -150,6 +152,8 @@
             this.Controls.Add(this.fomenu_futar_btn);
             this.Controls.Add(this.lb_fomenu);
             this.Controls.Add(this.fomenuvonal);
+            this.MaximumSize = new System.Drawing.Size(1280, 720);
+            this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "Fomenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fomenu";

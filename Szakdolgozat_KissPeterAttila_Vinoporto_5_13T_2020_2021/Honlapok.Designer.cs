@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Honlapok));
             this.honlapokvonal = new System.Windows.Forms.PictureBox();
             this.lb_honlapok = new System.Windows.Forms.Label();
-            this.fomenu_exit_btn = new System.Windows.Forms.Button();
             this.honlapok_fomenu_btn = new System.Windows.Forms.Button();
             this.honlapok_italpincer_btn = new System.Windows.Forms.Button();
             this.honlapok_sos_btn = new System.Windows.Forms.Button();
@@ -58,20 +57,6 @@
             this.lb_honlapok.Size = new System.Drawing.Size(181, 45);
             this.lb_honlapok.TabIndex = 2;
             this.lb_honlapok.Text = "Honlapok";
-            // 
-            // fomenu_exit_btn
-            // 
-            this.fomenu_exit_btn.BackColor = System.Drawing.Color.Transparent;
-            this.fomenu_exit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fomenu_exit_btn.Font = new System.Drawing.Font("Script MT Bold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fomenu_exit_btn.ForeColor = System.Drawing.Color.Black;
-            this.fomenu_exit_btn.Location = new System.Drawing.Point(1212, 4);
-            this.fomenu_exit_btn.Name = "fomenu_exit_btn";
-            this.fomenu_exit_btn.Size = new System.Drawing.Size(38, 42);
-            this.fomenu_exit_btn.TabIndex = 7;
-            this.fomenu_exit_btn.Text = "X";
-            this.fomenu_exit_btn.UseVisualStyleBackColor = false;
-            this.fomenu_exit_btn.Click += new System.EventHandler(this.fomenu_exit_btn_Click);
             // 
             // honlapok_fomenu_btn
             // 
@@ -149,9 +134,10 @@
             this.Controls.Add(this.honlapok_sos_btn);
             this.Controls.Add(this.honlapok_italpincer_btn);
             this.Controls.Add(this.honlapok_fomenu_btn);
-            this.Controls.Add(this.fomenu_exit_btn);
             this.Controls.Add(this.lb_honlapok);
             this.Controls.Add(this.honlapokvonal);
+            this.MaximumSize = new System.Drawing.Size(1280, 720);
+            this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "Honlapok";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Honlapok";
@@ -164,7 +150,6 @@
 
         private System.Windows.Forms.PictureBox honlapokvonal;
         private System.Windows.Forms.Label lb_honlapok;
-        private System.Windows.Forms.Button fomenu_exit_btn;
         private System.Windows.Forms.Button honlapok_fomenu_btn;
         private System.Windows.Forms.Button honlapok_italpincer_btn;
         private System.Windows.Forms.Button honlapok_sos_btn;
