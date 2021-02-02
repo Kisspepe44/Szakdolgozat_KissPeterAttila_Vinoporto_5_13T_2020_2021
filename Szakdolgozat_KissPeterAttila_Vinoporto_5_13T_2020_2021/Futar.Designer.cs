@@ -51,6 +51,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.button1 = new System.Windows.Forms.Button();
+            this.Futar_szamol_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fomenuvonal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -98,7 +99,7 @@
             this.Futar_futarvalaszto_cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Futar_futarvalaszto_cb.ForeColor = System.Drawing.Color.Black;
             this.Futar_futarvalaszto_cb.FormattingEnabled = true;
-            this.Futar_futarvalaszto_cb.Location = new System.Drawing.Point(93, 212);
+            this.Futar_futarvalaszto_cb.Location = new System.Drawing.Point(93, 145);
             this.Futar_futarvalaszto_cb.Name = "Futar_futarvalaszto_cb";
             this.Futar_futarvalaszto_cb.Size = new System.Drawing.Size(205, 33);
             this.Futar_futarvalaszto_cb.TabIndex = 10;
@@ -108,7 +109,7 @@
             this.futarlabel.AutoSize = true;
             this.futarlabel.BackColor = System.Drawing.Color.Transparent;
             this.futarlabel.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.futarlabel.Location = new System.Drawing.Point(145, 159);
+            this.futarlabel.Location = new System.Drawing.Point(145, 88);
             this.futarlabel.Name = "futarlabel";
             this.futarlabel.Size = new System.Drawing.Size(107, 50);
             this.futarlabel.TabIndex = 11;
@@ -118,7 +119,7 @@
             // 
             this.futar_exelbe_tb.BackColor = System.Drawing.Color.Bisque;
             this.futar_exelbe_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.futar_exelbe_tb.Location = new System.Drawing.Point(145, 108);
+            this.futar_exelbe_tb.Location = new System.Drawing.Point(874, 103);
             this.futar_exelbe_tb.Name = "futar_exelbe_tb";
             this.futar_exelbe_tb.Size = new System.Drawing.Size(205, 27);
             this.futar_exelbe_tb.TabIndex = 12;
@@ -128,7 +129,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(12, 62);
+            this.label1.Location = new System.Drawing.Point(724, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(489, 43);
             this.label1.TabIndex = 13;
@@ -139,7 +140,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(60, 272);
+            this.label2.Location = new System.Drawing.Point(57, 224);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(290, 50);
             this.label2.TabIndex = 14;
@@ -149,7 +150,7 @@
             // 
             this.numericUpDown1.BackColor = System.Drawing.Color.DarkOrange;
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numericUpDown1.Location = new System.Drawing.Point(93, 339);
+            this.numericUpDown1.Location = new System.Drawing.Point(93, 295);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(205, 30);
             this.numericUpDown1.TabIndex = 15;
@@ -159,7 +160,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(107, 398);
+            this.label3.Location = new System.Drawing.Point(105, 373);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(167, 50);
             this.label3.TabIndex = 16;
@@ -169,7 +170,7 @@
             // 
             this.numericUpDown2.BackColor = System.Drawing.Color.DarkOrange;
             this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numericUpDown2.Location = new System.Drawing.Point(93, 460);
+            this.numericUpDown2.Location = new System.Drawing.Point(93, 438);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(205, 30);
             this.numericUpDown2.TabIndex = 17;
@@ -294,12 +295,25 @@
             this.button1.Text = "Futár Címei";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // Futar_szamol_btn
+            // 
+            this.Futar_szamol_btn.BackColor = System.Drawing.Color.DarkOrange;
+            this.Futar_szamol_btn.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Futar_szamol_btn.ForeColor = System.Drawing.Color.Black;
+            this.Futar_szamol_btn.Location = new System.Drawing.Point(497, 604);
+            this.Futar_szamol_btn.Name = "Futar_szamol_btn";
+            this.Futar_szamol_btn.Size = new System.Drawing.Size(189, 43);
+            this.Futar_szamol_btn.TabIndex = 29;
+            this.Futar_szamol_btn.Text = "Számol";
+            this.Futar_szamol_btn.UseVisualStyleBackColor = false;
+            // 
             // Futar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.Futar_szamol_btn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.numericUpDown3);
             this.Controls.Add(this.label12);
@@ -360,5 +374,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.NumericUpDown numericUpDown3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Futar_szamol_btn;
     }
 }
