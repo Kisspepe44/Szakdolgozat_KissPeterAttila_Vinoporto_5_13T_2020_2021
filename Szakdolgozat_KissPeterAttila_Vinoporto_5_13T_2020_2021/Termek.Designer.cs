@@ -181,7 +181,7 @@
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.DarkOrange;
-            this.button8.Font = new System.Drawing.Font("Segoe Print", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button8.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button8.Location = new System.Drawing.Point(857, 169);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(186, 93);
@@ -430,6 +430,7 @@
             this.button31.TabIndex = 61;
             this.button31.Text = "WHISKEY";
             this.button31.UseVisualStyleBackColor = false;
+            this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
             // button32
             // 

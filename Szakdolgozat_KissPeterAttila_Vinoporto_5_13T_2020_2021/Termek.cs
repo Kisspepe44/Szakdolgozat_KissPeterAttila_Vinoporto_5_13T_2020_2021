@@ -31,6 +31,13 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
 
         }
 
-       
+        private void button31_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            Whiskey whiskeyForm = new Whiskey();
+
+            whiskeyForm.Show();
+        }
     }
 }

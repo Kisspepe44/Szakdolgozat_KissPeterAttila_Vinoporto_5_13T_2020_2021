@@ -306,6 +306,7 @@
             this.Futar_szamol_btn.TabIndex = 29;
             this.Futar_szamol_btn.Text = "Számol";
             this.Futar_szamol_btn.UseVisualStyleBackColor = false;
+            this.Futar_szamol_btn.Click += new System.EventHandler(this.Futar_szamol_btn_Click);
             // 
             // Futar
             // 

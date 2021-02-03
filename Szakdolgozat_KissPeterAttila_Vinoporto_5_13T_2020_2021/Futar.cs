@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
 
 namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
 {
     public partial class Futar : Form
     {
+        private static List<Beolvas>  lista = new List<Beolvas>();
         public Futar()
         {
-            InitializeComponent();
+            
+
+        InitializeComponent();
             Futar_futarvalaszto_cb.Items.Add("Kiss Péter");
             Futar_futarvalaszto_cb.Items.Add("Kiss Attila");
             Futar_futarvalaszto_cb.Items.Add("Éliás Dorottya");
@@ -35,7 +40,7 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
 
         }
 
-       
+        
 
         private void futar_fomenu_btn_Click(object sender, EventArgs e)
         {
@@ -46,6 +51,21 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
             fomenuForm.Show();
         }
 
-        
+        private void Futar_szamol_btn_Click(object sender, EventArgs e)
+        {
+            StreamReader beolvas = new StreamReader("tesztt.csv");
+
+            while (!beolvas.EndOfStream)
+            {
+                string sor = beolvas.ReadLine();
+                string[] bontottsor = sor.Split(';');
+                
+                Beolvas b = new Beolvas(bontottsor[0], bontottsor[1], bontottsor[2],Convert.ToInt32(bontottsor[3]), Convert.ToInt32(bontottsor[4]),bontottsor[5], bontottsor[6], Convert.ToInt32(bontottsor[7]), Convert.ToInt32(bontottsor[8]), Convert.ToInt32(bontottsor[9]), Convert.ToInt32(bontottsor[10]), Convert.ToInt32(bontottsor[11]), Convert.ToInt32(bontottsor[12]));
+                
+                lista.Add(b);
+                
+            }
+            MessageBox.Show(lista[0].Oldal);
+        }
     }
 }
