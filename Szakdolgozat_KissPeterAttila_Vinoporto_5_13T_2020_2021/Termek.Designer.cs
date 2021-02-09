@@ -42,6 +42,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Termek_min_nup = new System.Windows.Forms.NumericUpDown();
             this.Termek_max_nup = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Termek_web_cb = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.Termekvonal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Termek_min_nup)).BeginInit();
@@ -153,7 +155,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(78, 234);
+            this.label1.Location = new System.Drawing.Point(72, 319);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(307, 50);
             this.label1.TabIndex = 31;
@@ -164,7 +166,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(78, 320);
+            this.label2.Location = new System.Drawing.Point(72, 405);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(306, 50);
             this.label2.TabIndex = 32;
@@ -174,7 +176,7 @@
             // 
             this.Termek_min_nup.BackColor = System.Drawing.Color.DarkOrange;
             this.Termek_min_nup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Termek_min_nup.Location = new System.Drawing.Point(134, 287);
+            this.Termek_min_nup.Location = new System.Drawing.Point(128, 372);
             this.Termek_min_nup.Maximum = new decimal(new int[] {
             99999999,
             0,
@@ -188,7 +190,7 @@
             // 
             this.Termek_max_nup.BackColor = System.Drawing.Color.DarkOrange;
             this.Termek_max_nup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Termek_max_nup.Location = new System.Drawing.Point(134, 373);
+            this.Termek_max_nup.Location = new System.Drawing.Point(128, 458);
             this.Termek_max_nup.Maximum = new decimal(new int[] {
             99999999,
             0,
@@ -203,12 +205,39 @@
             0,
             0});
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(129, 234);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(183, 50);
+            this.label3.TabIndex = 35;
+            this.label3.Text = "Webáruház:";
+            // 
+            // Termek_web_cb
+            // 
+            this.Termek_web_cb.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Termek_web_cb.BackColor = System.Drawing.Color.DarkOrange;
+            this.Termek_web_cb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Termek_web_cb.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Termek_web_cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Termek_web_cb.ForeColor = System.Drawing.Color.Black;
+            this.Termek_web_cb.FormattingEnabled = true;
+            this.Termek_web_cb.Location = new System.Drawing.Point(43, 283);
+            this.Termek_web_cb.Name = "Termek_web_cb";
+            this.Termek_web_cb.Size = new System.Drawing.Size(387, 33);
+            this.Termek_web_cb.TabIndex = 36;
+            // 
             // Termek
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.Termek_web_cb);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.Termek_max_nup);
             this.Controls.Add(this.Termek_min_nup);
             this.Controls.Add(this.label2);
@@ -247,5 +276,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown Termek_min_nup;
         private System.Windows.Forms.NumericUpDown Termek_max_nup;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox Termek_web_cb;
     }
 }
