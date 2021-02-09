@@ -59,7 +59,7 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
             {
                 string sor = beolvas.ReadLine();
                 string[] bontottsor = sor.Split(';');
-                
+                MessageBox.Show(sor);
                 Beolvas b = new Beolvas(bontottsor[0], bontottsor[1], bontottsor[2],Convert.ToInt32(bontottsor[3]), Convert.ToInt32(bontottsor[4]),bontottsor[5], bontottsor[6], Convert.ToInt32(bontottsor[7]), Convert.ToInt32(bontottsor[8]), Convert.ToInt32(bontottsor[9]), Convert.ToInt32(bontottsor[10]), Convert.ToInt32(bontottsor[11]), Convert.ToInt32(bontottsor[12]));
                 
                 lista.Add(b);

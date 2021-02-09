@@ -131,6 +131,7 @@
     <Compile Include="Termek.Designer.cs">
       <DependentUpon>Termek.cs</DependentUpon>
     </Compile>
+    <Compile Include="Termekcsoportok.cs" />
     <Compile Include="Whiskey.cs">
       <SubType>Form</SubType>
     </Compile>
