@@ -132,6 +132,13 @@
       <DependentUpon>Termek.cs</DependentUpon>
     </Compile>
     <Compile Include="Termekcsoportok.cs" />
+    <Compile Include="Termeklekerdezes.cs" />
+    <Compile Include="Vasarlas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vasarlas.Designer.cs">
+      <DependentUpon>Vasarlas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Whiskey.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +172,9 @@
     </Compile>
     <EmbeddedResource Include="Termek.resx">
       <DependentUpon>Termek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vasarlas.resx">
+      <DependentUpon>Vasarlas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Whiskey.resx">
       <DependentUpon>Whiskey.cs</DependentUpon>

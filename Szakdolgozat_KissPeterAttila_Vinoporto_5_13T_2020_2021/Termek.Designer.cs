@@ -117,9 +117,12 @@
             this.dataGridView1.Location = new System.Drawing.Point(503, 60);
             this.dataGridView1.MaximumSize = new System.Drawing.Size(747, 601);
             this.dataGridView1.MinimumSize = new System.Drawing.Size(747, 601);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(747, 601);
             this.dataGridView1.TabIndex = 18;
             // 
@@ -269,7 +272,6 @@
         private System.Windows.Forms.Label lb_termek;
         private System.Windows.Forms.ComboBox Termek_termekcsoport_cb;
         private System.Windows.Forms.Label Termecsoport_lb;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button termek_fomenu_btn;
         private System.Windows.Forms.Button Termek_keres_btn;
         private System.Windows.Forms.Label label1;
@@ -278,5 +280,6 @@
         private System.Windows.Forms.NumericUpDown Termek_max_nup;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox Termek_web_cb;
+        protected System.Windows.Forms.DataGridView dataGridView1;
     }
 }

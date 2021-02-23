@@ -52,5 +52,14 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
 
             termekForm.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            Vasarlas vasarlasForm = new Vasarlas();
+
+            vasarlasForm.Show();
+        }
     }
 }

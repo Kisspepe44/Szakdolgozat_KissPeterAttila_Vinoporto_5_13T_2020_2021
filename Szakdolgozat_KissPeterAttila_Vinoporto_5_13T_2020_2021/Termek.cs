@@ -82,28 +82,33 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
         private void Termek_keres_btn_Click(object sender, EventArgs e)
         {
             string web = "`Termekcsoport`,`Megnevezes`,`italpincer`,`partyhordoberugok`,`sosnight`";
+            string webar = "'italpincer' and `partyhordoberugok` and `sosnight`";
             if (Termek_web_cb.Text == "Mind 3")
             {
-                web = "`Termekcsoport`,`Megnevezes`,`italpincer`,`partyhordoberugok`,`sosnight`";
+                web = " Termekcsoport , Megnevezes, italpincer ,partyhordoberugok ,sosnight";
+                webar = "italpincer and partyhordoberugok and sosnight";
             }
             else if (Termek_web_cb.Text == "Italpincér")
             {
                 web = "`Termekcsoport`,`Megnevezes`,`italpincer`";
+                webar = "`italpincer`";
             }
             else if (Termek_web_cb.Text == "SosNight")
             {
                 web = "`Termekcsoport`,`Megnevezes`,`sosnight`";
+                webar = "`sosnight`";
             }
             else if (Termek_web_cb.Text == "Partyhordo/Berugok.hu")
             {
                 web = "`Termekcsoport`,`Megnevezes`,`partyhordoberugok`";
+                webar = "`partyhordoberugok`";
             }
 
             try
             {
                 
                 sql = conn.CreateCommand();
-                MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT "+web+" FROM `arkepzes` WHERE `Termekcsoport` like '" + Termek_termekcsoport_cb.SelectedItem+ "' and  italpincer and partyhordoberugok AND sosnight BETWEEN "+Termek_min_nup.Value+" and "+Termek_max_nup.Value+";", conn);
+                MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT "+web+" FROM `arkepzes` WHERE `Termekcsoport` like '" + Termek_termekcsoport_cb.SelectedItem+ "' and  "+ webar +" BETWEEN "+Termek_min_nup.Value+" and "+Termek_max_nup.Value+";", conn);
 
                 DataSet ds = new DataSet();
                 adapter.Fill(ds, "arkepzes");
