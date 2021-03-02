@@ -123,6 +123,7 @@
             this.futar_exelbe_tb.Name = "futar_exelbe_tb";
             this.futar_exelbe_tb.Size = new System.Drawing.Size(205, 27);
             this.futar_exelbe_tb.TabIndex = 12;
+            this.futar_exelbe_tb.TextChanged += new System.EventHandler(this.futar_exelbe_tb_TextChanged);
             // 
             // label1
             // 

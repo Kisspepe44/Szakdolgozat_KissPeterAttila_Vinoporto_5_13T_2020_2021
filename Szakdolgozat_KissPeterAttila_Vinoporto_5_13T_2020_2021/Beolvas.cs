@@ -22,21 +22,102 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
         private int webbk;
         private int pos;
 
-        public Beolvas(string oldal, string felulet, string futarnev, int rendelesszam, int kerulet, string cim, string megjegyzes, int npkp, int sajatkp, int kiadas, int npbk, int webbk, int pos)
+        public Beolvas(string adatok)
         {
-            this.Oldal = oldal;
-            this.Felulet = felulet;
-            this.Futarnev = futarnev;
-            this.Rendelesszam = rendelesszam;
-            this.Kerulet = kerulet;
-            this.Cim = cim;
-            this.Megjegyzes = megjegyzes;
-            this.Npkp = npkp;
-            this.Sajatkp = sajatkp;
-            this.Kiadas = kiadas;
-            this.Npbk = npbk;
-            this.Webbk = webbk;
-            this.Pos = pos;
+            string[] bontottsor = adatok.Split(';');
+
+
+
+            try
+            {
+
+                this.Oldal = bontottsor[0];
+                this.Felulet = bontottsor[1];
+                this.Futarnev = bontottsor[2];
+                if (bontottsor[3] != "")
+                {
+                    this.Rendelesszam = Convert.ToInt32(bontottsor[3]);
+                }
+                else
+                {
+                    this.Rendelesszam = 0;
+                }
+                if (bontottsor[4] != "")
+                {
+                    this.Kerulet = Convert.ToInt32(bontottsor[4]);
+                }
+                else
+                {
+                    this.Kerulet = 0;
+                }
+                
+                this.Cim = cim;
+                this.Megjegyzes = megjegyzes;
+                if (bontottsor[5] != "")
+                {
+                    this.Npkp = Convert.ToInt32(bontottsor[5]);
+                }
+                else
+                {
+                    this.Npkp = 0;
+                }
+
+                if (bontottsor[6] != "")
+                {
+                    this.Sajatkp = Convert.ToInt32(bontottsor[6]);
+                }
+                else
+                {
+                    this.Sajatkp = 0;
+                }
+
+                if (bontottsor[7] != "")
+                {
+                    this.Kiadas = Convert.ToInt32(bontottsor[7]);
+                }
+                else
+                {
+                    this.Kiadas = 0;
+                }
+
+                if (bontottsor[8] != "")
+                {
+                    this.Npbk = Convert.ToInt32(bontottsor[8]);
+                }
+                else
+                {
+                    this.Npbk = 0;
+                }
+
+                if (bontottsor[9] != "")
+                {
+                    this.Webbk = Convert.ToInt32(bontottsor[9]);
+                }
+                else
+                {
+                    this.Webbk = 0;
+                }
+
+                if (bontottsor[10] != "")
+                {
+                    this.Pos = Convert.ToInt32(bontottsor[10]);
+                }
+                else
+                {
+                    this.Pos = 0;
+                }
+                
+                
+                
+               
+                
+               
+
+            }
+            catch (Exception e)
+            {
+
+            }
         }
 
         public string Oldal { get => oldal; set => oldal = value; }

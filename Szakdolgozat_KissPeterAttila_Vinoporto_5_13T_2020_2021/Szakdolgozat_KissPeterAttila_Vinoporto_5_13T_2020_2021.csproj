@@ -111,6 +111,7 @@
     <Compile Include="Futar.Designer.cs">
       <DependentUpon>Futar.cs</DependentUpon>
     </Compile>
+    <Compile Include="futarok.cs" />
     <Compile Include="Honlapok.cs">
       <SubType>Form</SubType>
     </Compile>
