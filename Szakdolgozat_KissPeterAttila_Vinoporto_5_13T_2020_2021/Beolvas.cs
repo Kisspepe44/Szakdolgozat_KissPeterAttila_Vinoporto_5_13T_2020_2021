@@ -28,6 +28,7 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
 
 
 
+
             try
             {
 
@@ -51,56 +52,56 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
                     this.Kerulet = 0;
                 }
                 
-                this.Cim = cim;
-                this.Megjegyzes = megjegyzes;
-                if (bontottsor[5] != "")
+                this.Cim = bontottsor[5]; 
+                this.Megjegyzes = bontottsor[6]; 
+                if (bontottsor[7] != "")
                 {
-                    this.Npkp = Convert.ToInt32(bontottsor[5]);
+                    this.Npkp = Convert.ToInt32(bontottsor[7]);
                 }
                 else
                 {
                     this.Npkp = 0;
                 }
 
-                if (bontottsor[6] != "")
+                if (bontottsor[8] != "")
                 {
-                    this.Sajatkp = Convert.ToInt32(bontottsor[6]);
+                    this.Sajatkp = Convert.ToInt32(bontottsor[8]);
                 }
                 else
                 {
                     this.Sajatkp = 0;
                 }
 
-                if (bontottsor[7] != "")
+                if (bontottsor[9] != "")
                 {
-                    this.Kiadas = Convert.ToInt32(bontottsor[7]);
+                    this.Kiadas = Convert.ToInt32(bontottsor[9]);
                 }
                 else
                 {
                     this.Kiadas = 0;
                 }
 
-                if (bontottsor[8] != "")
+                if (bontottsor[10] != "")
                 {
-                    this.Npbk = Convert.ToInt32(bontottsor[8]);
+                    this.Npbk = Convert.ToInt32(bontottsor[10]);
                 }
                 else
                 {
                     this.Npbk = 0;
                 }
 
-                if (bontottsor[9] != "")
+                if (bontottsor[11] != "")
                 {
-                    this.Webbk = Convert.ToInt32(bontottsor[9]);
+                    this.Webbk = Convert.ToInt32(bontottsor[11]);
                 }
                 else
                 {
                     this.Webbk = 0;
                 }
 
-                if (bontottsor[10] != "")
+                if (bontottsor[12] != "")
                 {
-                    this.Pos = Convert.ToInt32(bontottsor[10]);
+                    this.Pos = Convert.ToInt32(bontottsor[12]);
                 }
                 else
                 {
@@ -118,6 +119,7 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
             {
 
             }
+            
         }
 
         public string Oldal { get => oldal; set => oldal = value; }

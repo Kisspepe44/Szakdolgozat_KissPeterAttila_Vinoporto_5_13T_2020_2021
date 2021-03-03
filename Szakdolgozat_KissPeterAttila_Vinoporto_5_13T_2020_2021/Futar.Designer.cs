@@ -37,25 +37,25 @@
             this.futar_exelbe_tb = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.kp_nud = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.munkaido_nud = new System.Windows.Forms.NumericUpDown();
+            this.oraber_lb = new System.Windows.Forms.Label();
+            this.bk_lb = new System.Windows.Forms.Label();
+            this.kp_lb = new System.Windows.Forms.Label();
+            this.cimpenz_lb = new System.Windows.Forms.Label();
+            this.uzemanyag_lb = new System.Windows.Forms.Label();
+            this.bevetel_lb = new System.Windows.Forms.Label();
+            this.leado_lb = new System.Windows.Forms.Label();
+            this.kereset_lb = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.uzemanyag_nud = new System.Windows.Forms.NumericUpDown();
             this.button1 = new System.Windows.Forms.Button();
             this.Futar_szamol_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fomenuvonal)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kp_nud)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.munkaido_nud)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uzemanyag_nud)).BeginInit();
             this.SuspendLayout();
             // 
             // fomenuvonal
@@ -147,122 +147,128 @@
             this.label2.TabIndex = 14;
             this.label2.Text = "Megtett Kilóméter:";
             // 
-            // numericUpDown1
+            // kp_nud
             // 
-            this.numericUpDown1.BackColor = System.Drawing.Color.DarkOrange;
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numericUpDown1.Location = new System.Drawing.Point(93, 295);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(205, 30);
-            this.numericUpDown1.TabIndex = 15;
+            this.kp_nud.BackColor = System.Drawing.Color.DarkOrange;
+            this.kp_nud.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.kp_nud.Location = new System.Drawing.Point(93, 295);
+            this.kp_nud.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.kp_nud.Name = "kp_nud";
+            this.kp_nud.Size = new System.Drawing.Size(205, 30);
+            this.kp_nud.TabIndex = 15;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(105, 373);
+            this.label3.Location = new System.Drawing.Point(35, 373);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(167, 50);
+            this.label3.Size = new System.Drawing.Size(363, 50);
             this.label3.TabIndex = 16;
-            this.label3.Text = "Munkaidő:";
+            this.label3.Text = "Munkaidő (30p/egység):";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // numericUpDown2
+            // munkaido_nud
             // 
-            this.numericUpDown2.BackColor = System.Drawing.Color.DarkOrange;
-            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numericUpDown2.Location = new System.Drawing.Point(93, 438);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(205, 30);
-            this.numericUpDown2.TabIndex = 17;
+            this.munkaido_nud.BackColor = System.Drawing.Color.DarkOrange;
+            this.munkaido_nud.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.munkaido_nud.Location = new System.Drawing.Point(93, 438);
+            this.munkaido_nud.Name = "munkaido_nud";
+            this.munkaido_nud.Size = new System.Drawing.Size(205, 30);
+            this.munkaido_nud.TabIndex = 17;
             // 
-            // label4
+            // oraber_lb
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(494, 145);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 50);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Órabér:";
+            this.oraber_lb.AutoSize = true;
+            this.oraber_lb.BackColor = System.Drawing.Color.Transparent;
+            this.oraber_lb.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.oraber_lb.Location = new System.Drawing.Point(494, 145);
+            this.oraber_lb.Name = "oraber_lb";
+            this.oraber_lb.Size = new System.Drawing.Size(127, 50);
+            this.oraber_lb.TabIndex = 18;
+            this.oraber_lb.Text = "Órabér:";
             // 
-            // label5
+            // bk_lb
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(494, 195);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 50);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "BK:";
+            this.bk_lb.AutoSize = true;
+            this.bk_lb.BackColor = System.Drawing.Color.Transparent;
+            this.bk_lb.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bk_lb.Location = new System.Drawing.Point(494, 195);
+            this.bk_lb.Name = "bk_lb";
+            this.bk_lb.Size = new System.Drawing.Size(72, 50);
+            this.bk_lb.TabIndex = 19;
+            this.bk_lb.Text = "BK:";
             // 
-            // label6
+            // kp_lb
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(494, 245);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 50);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "KP:";
+            this.kp_lb.AutoSize = true;
+            this.kp_lb.BackColor = System.Drawing.Color.Transparent;
+            this.kp_lb.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.kp_lb.Location = new System.Drawing.Point(494, 245);
+            this.kp_lb.Name = "kp_lb";
+            this.kp_lb.Size = new System.Drawing.Size(71, 50);
+            this.kp_lb.TabIndex = 20;
+            this.kp_lb.Text = "KP:";
             // 
-            // label7
+            // cimpenz_lb
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(494, 295);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(152, 50);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "Címpénz:";
+            this.cimpenz_lb.AutoSize = true;
+            this.cimpenz_lb.BackColor = System.Drawing.Color.Transparent;
+            this.cimpenz_lb.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.cimpenz_lb.Location = new System.Drawing.Point(494, 295);
+            this.cimpenz_lb.Name = "cimpenz_lb";
+            this.cimpenz_lb.Size = new System.Drawing.Size(152, 50);
+            this.cimpenz_lb.TabIndex = 21;
+            this.cimpenz_lb.Text = "Címpénz:";
             // 
-            // label8
+            // uzemanyag_lb
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(494, 345);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(192, 50);
-            this.label8.TabIndex = 22;
-            this.label8.Text = "Üzemanyag:";
+            this.uzemanyag_lb.AutoSize = true;
+            this.uzemanyag_lb.BackColor = System.Drawing.Color.Transparent;
+            this.uzemanyag_lb.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.uzemanyag_lb.Location = new System.Drawing.Point(494, 345);
+            this.uzemanyag_lb.Name = "uzemanyag_lb";
+            this.uzemanyag_lb.Size = new System.Drawing.Size(192, 50);
+            this.uzemanyag_lb.TabIndex = 22;
+            this.uzemanyag_lb.Text = "Üzemanyag:";
             // 
-            // label9
+            // bevetel_lb
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.Location = new System.Drawing.Point(494, 398);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(223, 50);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "Napi Bevétele:";
+            this.bevetel_lb.AutoSize = true;
+            this.bevetel_lb.BackColor = System.Drawing.Color.Transparent;
+            this.bevetel_lb.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bevetel_lb.Location = new System.Drawing.Point(494, 398);
+            this.bevetel_lb.Name = "bevetel_lb";
+            this.bevetel_lb.Size = new System.Drawing.Size(223, 50);
+            this.bevetel_lb.TabIndex = 23;
+            this.bevetel_lb.Text = "Napi Bevétele:";
             // 
-            // label10
+            // leado_lb
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label10.Location = new System.Drawing.Point(494, 448);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(113, 50);
-            this.label10.TabIndex = 24;
-            this.label10.Text = "Leadó:";
+            this.leado_lb.AutoSize = true;
+            this.leado_lb.BackColor = System.Drawing.Color.Transparent;
+            this.leado_lb.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.leado_lb.Location = new System.Drawing.Point(494, 448);
+            this.leado_lb.Name = "leado_lb";
+            this.leado_lb.Size = new System.Drawing.Size(113, 50);
+            this.leado_lb.TabIndex = 24;
+            this.leado_lb.Text = "Leadó:";
             // 
-            // label11
+            // kereset_lb
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label11.Location = new System.Drawing.Point(494, 498);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(148, 50);
-            this.label11.TabIndex = 25;
-            this.label11.Text = "Keresett:";
+            this.kereset_lb.AutoSize = true;
+            this.kereset_lb.BackColor = System.Drawing.Color.Transparent;
+            this.kereset_lb.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.kereset_lb.Location = new System.Drawing.Point(494, 498);
+            this.kereset_lb.Name = "kereset_lb";
+            this.kereset_lb.Size = new System.Drawing.Size(148, 50);
+            this.kereset_lb.TabIndex = 25;
+            this.kereset_lb.Text = "Keresett:";
             // 
             // label12
             // 
@@ -275,14 +281,19 @@
             this.label12.TabIndex = 26;
             this.label12.Text = "Üzemanyag/L:";
             // 
-            // numericUpDown3
+            // uzemanyag_nud
             // 
-            this.numericUpDown3.BackColor = System.Drawing.Color.DarkOrange;
-            this.numericUpDown3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numericUpDown3.Location = new System.Drawing.Point(93, 591);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(205, 30);
-            this.numericUpDown3.TabIndex = 27;
+            this.uzemanyag_nud.BackColor = System.Drawing.Color.DarkOrange;
+            this.uzemanyag_nud.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.uzemanyag_nud.Location = new System.Drawing.Point(93, 591);
+            this.uzemanyag_nud.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.uzemanyag_nud.Name = "uzemanyag_nud";
+            this.uzemanyag_nud.Size = new System.Drawing.Size(205, 30);
+            this.uzemanyag_nud.TabIndex = 27;
             // 
             // button1
             // 
@@ -317,19 +328,19 @@
             this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.Futar_szamol_btn);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.numericUpDown3);
+            this.Controls.Add(this.uzemanyag_nud);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.numericUpDown2);
+            this.Controls.Add(this.kereset_lb);
+            this.Controls.Add(this.leado_lb);
+            this.Controls.Add(this.bevetel_lb);
+            this.Controls.Add(this.uzemanyag_lb);
+            this.Controls.Add(this.cimpenz_lb);
+            this.Controls.Add(this.kp_lb);
+            this.Controls.Add(this.bk_lb);
+            this.Controls.Add(this.oraber_lb);
+            this.Controls.Add(this.munkaido_nud);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.kp_nud);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.futar_exelbe_tb);
@@ -344,9 +355,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Futar";
             ((System.ComponentModel.ISupportInitialize)(this.fomenuvonal)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kp_nud)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.munkaido_nud)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uzemanyag_nud)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -362,19 +373,19 @@
         private System.Windows.Forms.TextBox futar_exelbe_tb;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown kp_nud;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.NumericUpDown munkaido_nud;
+        private System.Windows.Forms.Label oraber_lb;
+        private System.Windows.Forms.Label bk_lb;
+        private System.Windows.Forms.Label kp_lb;
+        private System.Windows.Forms.Label cimpenz_lb;
+        private System.Windows.Forms.Label uzemanyag_lb;
+        private System.Windows.Forms.Label bevetel_lb;
+        private System.Windows.Forms.Label leado_lb;
+        private System.Windows.Forms.Label kereset_lb;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown uzemanyag_nud;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Futar_szamol_btn;
     }
