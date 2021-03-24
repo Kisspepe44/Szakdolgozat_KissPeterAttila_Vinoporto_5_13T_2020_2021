@@ -21,6 +21,8 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
         MySqlCommand sql = null;
         public Futar()
         {
+
+
             
 
         InitializeComponent();
@@ -151,12 +153,12 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
             bevetel_lb.Text = "Napi Bevétel: " + bevetel;
 
 
+            
 
 
 
 
 
-           
         }
 
         private void futar_exelbe_tb_TextChanged(object sender, EventArgs e)
@@ -168,5 +170,7 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
         {
 
         }
+        
+
     }
 }

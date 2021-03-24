@@ -45,11 +45,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.kosartartam = new System.Windows.Forms.Button();
+            this.kosarurit = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.id_NUD = new System.Windows.Forms.NumericUpDown();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Vasarlasvonal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Termek_min_nup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.id_NUD)).BeginInit();
             this.SuspendLayout();
             // 
             // Vasarlasvonal
@@ -90,7 +96,7 @@
             this.Termecsoport_lb.AutoSize = true;
             this.Termecsoport_lb.BackColor = System.Drawing.Color.Transparent;
             this.Termecsoport_lb.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Termecsoport_lb.Location = new System.Drawing.Point(85, 79);
+            this.Termecsoport_lb.Location = new System.Drawing.Point(85, 122);
             this.Termecsoport_lb.Name = "Termecsoport_lb";
             this.Termecsoport_lb.Size = new System.Drawing.Size(507, 50);
             this.Termecsoport_lb.TabIndex = 13;
@@ -105,7 +111,7 @@
             this.Vasarlas_termekcsoport_cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Vasarlas_termekcsoport_cb.ForeColor = System.Drawing.Color.Black;
             this.Vasarlas_termekcsoport_cb.FormattingEnabled = true;
-            this.Vasarlas_termekcsoport_cb.Location = new System.Drawing.Point(12, 132);
+            this.Vasarlas_termekcsoport_cb.Location = new System.Drawing.Point(12, 175);
             this.Vasarlas_termekcsoport_cb.Name = "Vasarlas_termekcsoport_cb";
             this.Vasarlas_termekcsoport_cb.Size = new System.Drawing.Size(651, 33);
             this.Vasarlas_termekcsoport_cb.TabIndex = 14;
@@ -115,7 +121,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(102, 206);
+            this.label1.Location = new System.Drawing.Point(100, 391);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(447, 50);
             this.label1.TabIndex = 15;
@@ -130,7 +136,7 @@
             this.vasarlas_termek_cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.vasarlas_termek_cb.ForeColor = System.Drawing.Color.Black;
             this.vasarlas_termek_cb.FormattingEnabled = true;
-            this.vasarlas_termek_cb.Location = new System.Drawing.Point(12, 259);
+            this.vasarlas_termek_cb.Location = new System.Drawing.Point(12, 444);
             this.vasarlas_termek_cb.Name = "vasarlas_termek_cb";
             this.vasarlas_termek_cb.Size = new System.Drawing.Size(651, 33);
             this.vasarlas_termek_cb.TabIndex = 16;
@@ -140,7 +146,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(85, 295);
+            this.label2.Location = new System.Drawing.Point(85, 480);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(496, 50);
             this.label2.TabIndex = 17;
@@ -150,7 +156,7 @@
             // 
             this.Termek_min_nup.BackColor = System.Drawing.Color.DarkOrange;
             this.Termek_min_nup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Termek_min_nup.Location = new System.Drawing.Point(228, 348);
+            this.Termek_min_nup.Location = new System.Drawing.Point(228, 542);
             this.Termek_min_nup.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -175,7 +181,7 @@
             this.Termek_keres_btn.BackColor = System.Drawing.Color.DarkOrange;
             this.Termek_keres_btn.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Termek_keres_btn.ForeColor = System.Drawing.Color.Black;
-            this.Termek_keres_btn.Location = new System.Drawing.Point(244, 171);
+            this.Termek_keres_btn.Location = new System.Drawing.Point(244, 214);
             this.Termek_keres_btn.Name = "Termek_keres_btn";
             this.Termek_keres_btn.Size = new System.Drawing.Size(189, 43);
             this.Termek_keres_btn.TabIndex = 35;
@@ -187,9 +193,9 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.DarkOrange;
             this.textBox1.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(41, 522);
+            this.textBox1.Location = new System.Drawing.Point(12, 313);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(580, 38);
+            this.textBox1.Size = new System.Drawing.Size(651, 38);
             this.textBox1.TabIndex = 36;
             // 
             // label3
@@ -197,7 +203,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(167, 469);
+            this.label3.Location = new System.Drawing.Point(176, 260);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(307, 50);
             this.label3.TabIndex = 37;
@@ -208,36 +214,26 @@
             this.button1.BackColor = System.Drawing.Color.DarkOrange;
             this.button1.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(111, 599);
+            this.button1.Location = new System.Drawing.Point(244, 357);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(189, 43);
             this.button1.TabIndex = 38;
             this.button1.Text = "Keresés";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.DarkOrange;
             this.button2.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(228, 403);
+            this.button2.Location = new System.Drawing.Point(23, 578);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(189, 43);
             this.button2.TabIndex = 39;
             this.button2.Text = "Kosárhoz ad";
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.DarkOrange;
-            this.button3.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(360, 599);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(189, 43);
-            this.button3.TabIndex = 40;
-            this.button3.Text = "Kosárhoz ad";
-            this.button3.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
@@ -269,14 +265,106 @@
             this.dataGridView1.Size = new System.Drawing.Size(584, 601);
             this.dataGridView1.TabIndex = 41;
             // 
+            // kosartartam
+            // 
+            this.kosartartam.BackColor = System.Drawing.Color.DarkOrange;
+            this.kosartartam.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.kosartartam.ForeColor = System.Drawing.Color.Black;
+            this.kosartartam.Location = new System.Drawing.Point(244, 578);
+            this.kosartartam.Name = "kosartartam";
+            this.kosartartam.Size = new System.Drawing.Size(223, 43);
+            this.kosartartam.TabIndex = 42;
+            this.kosartartam.Text = "Kosár Megnyitása";
+            this.kosartartam.UseVisualStyleBackColor = false;
+            this.kosartartam.Click += new System.EventHandler(this.kosartartam_Click);
+            // 
+            // kosarurit
+            // 
+            this.kosarurit.BackColor = System.Drawing.Color.OrangeRed;
+            this.kosarurit.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.kosarurit.ForeColor = System.Drawing.Color.Black;
+            this.kosarurit.Location = new System.Drawing.Point(41, 60);
+            this.kosarurit.Name = "kosarurit";
+            this.kosarurit.Size = new System.Drawing.Size(189, 59);
+            this.kosarurit.TabIndex = 43;
+            this.kosarurit.Text = "Kosár Ürítése";
+            this.kosarurit.UseVisualStyleBackColor = false;
+            this.kosarurit.Click += new System.EventHandler(this.kosarurit_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(302, 63);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(61, 50);
+            this.label4.TabIndex = 44;
+            this.label4.Text = "ID:";
+            // 
+            // id_NUD
+            // 
+            this.id_NUD.BackColor = System.Drawing.Color.DarkOrange;
+            this.id_NUD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.id_NUD.Location = new System.Drawing.Point(369, 78);
+            this.id_NUD.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.id_NUD.Minimum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            -2147483648});
+            this.id_NUD.Name = "id_NUD";
+            this.id_NUD.Size = new System.Drawing.Size(82, 30);
+            this.id_NUD.TabIndex = 45;
+            this.id_NUD.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.OrangeRed;
+            this.button3.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.Location = new System.Drawing.Point(457, 63);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(189, 59);
+            this.button3.TabIndex = 46;
+            this.button3.Text = "Termék Törlése";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.DarkOrange;
+            this.button4.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.Location = new System.Drawing.Point(473, 578);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(190, 43);
+            this.button4.TabIndex = 47;
+            this.button4.Text = "Számol";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
             // Vasarlas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1262, 673);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
+            this.Controls.Add(this.id_NUD);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.kosarurit);
+            this.Controls.Add(this.kosartartam);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
@@ -300,6 +388,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Vasarlasvonal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Termek_min_nup)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.id_NUD)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -321,7 +410,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         protected System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button kosartartam;
+        private System.Windows.Forms.Button kosarurit;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.NumericUpDown id_NUD;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

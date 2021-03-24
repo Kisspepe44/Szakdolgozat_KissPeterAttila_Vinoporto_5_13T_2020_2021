@@ -37,7 +37,7 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
 
         public override string ToString()
         {
-            return this.Megnevezes +"| "+ this.Italpincer + " Ft.";
+            return this.Megnevezes +"#"+ this.Italpincer + " Ft.";
         }
     }
 }

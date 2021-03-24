@@ -52,6 +52,7 @@
             this.uzemanyag_nud = new System.Windows.Forms.NumericUpDown();
             this.button1 = new System.Windows.Forms.Button();
             this.Futar_szamol_btn = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fomenuvonal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kp_nud)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.munkaido_nud)).BeginInit();
@@ -312,7 +313,7 @@
             this.Futar_szamol_btn.BackColor = System.Drawing.Color.DarkOrange;
             this.Futar_szamol_btn.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Futar_szamol_btn.ForeColor = System.Drawing.Color.Black;
-            this.Futar_szamol_btn.Location = new System.Drawing.Point(497, 604);
+            this.Futar_szamol_btn.Location = new System.Drawing.Point(394, 578);
             this.Futar_szamol_btn.Name = "Futar_szamol_btn";
             this.Futar_szamol_btn.Size = new System.Drawing.Size(189, 43);
             this.Futar_szamol_btn.TabIndex = 29;
@@ -320,12 +321,26 @@
             this.Futar_szamol_btn.UseVisualStyleBackColor = false;
             this.Futar_szamol_btn.Click += new System.EventHandler(this.Futar_szamol_btn_Click);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkOrange;
+            this.button2.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(602, 578);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(189, 43);
+            this.button2.TabIndex = 30;
+            this.button2.Text = "Nullázás";
+            this.button2.UseVisualStyleBackColor = false;
+           
+            // 
             // Futar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.Futar_szamol_btn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.uzemanyag_nud);
@@ -388,5 +403,6 @@
         private System.Windows.Forms.NumericUpDown uzemanyag_nud;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Futar_szamol_btn;
+        private System.Windows.Forms.Button button2;
     }
 }
