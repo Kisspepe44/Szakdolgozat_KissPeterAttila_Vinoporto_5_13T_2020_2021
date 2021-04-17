@@ -65,7 +65,7 @@
             this.lb_termek.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_termek.Location = new System.Drawing.Point(514, 1);
             this.lb_termek.Name = "lb_termek";
-            this.lb_termek.Size = new System.Drawing.Size(258, 45);
+            this.lb_termek.Size = new System.Drawing.Size(325, 45);
             this.lb_termek.TabIndex = 3;
             this.lb_termek.Text = "Termék Ajánló";
             // 
@@ -96,6 +96,10 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Orange;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Orange;

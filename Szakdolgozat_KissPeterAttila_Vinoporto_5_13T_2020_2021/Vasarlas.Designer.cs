@@ -51,7 +51,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.id_NUD = new System.Windows.Forms.NumericUpDown();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.vasarlas_vegosz_lb = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Vasarlasvonal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Termek_min_nup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -237,6 +237,10 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Orange;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Orange;
@@ -262,7 +266,7 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(584, 601);
+            this.dataGridView1.Size = new System.Drawing.Size(584, 493);
             this.dataGridView1.TabIndex = 41;
             // 
             // kosartartam
@@ -270,7 +274,7 @@
             this.kosartartam.BackColor = System.Drawing.Color.DarkOrange;
             this.kosartartam.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.kosartartam.ForeColor = System.Drawing.Color.Black;
-            this.kosartartam.Location = new System.Drawing.Point(244, 578);
+            this.kosartartam.Location = new System.Drawing.Point(399, 578);
             this.kosartartam.Name = "kosartartam";
             this.kosartartam.Size = new System.Drawing.Size(223, 43);
             this.kosartartam.TabIndex = 42;
@@ -308,15 +312,15 @@
             this.id_NUD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.id_NUD.Location = new System.Drawing.Point(369, 78);
             this.id_NUD.Maximum = new decimal(new int[] {
-            5000,
+            100000,
             0,
             0,
             0});
             this.id_NUD.Minimum = new decimal(new int[] {
-            5000,
+            1,
             0,
             0,
-            -2147483648});
+            0});
             this.id_NUD.Name = "id_NUD";
             this.id_NUD.Size = new System.Drawing.Size(82, 30);
             this.id_NUD.TabIndex = 45;
@@ -339,18 +343,16 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // vasarlas_vegosz_lb
             // 
-            this.button4.BackColor = System.Drawing.Color.DarkOrange;
-            this.button4.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(473, 578);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(190, 43);
-            this.button4.TabIndex = 47;
-            this.button4.Text = "Számol";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            this.vasarlas_vegosz_lb.AutoSize = true;
+            this.vasarlas_vegosz_lb.BackColor = System.Drawing.Color.Transparent;
+            this.vasarlas_vegosz_lb.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.vasarlas_vegosz_lb.Location = new System.Drawing.Point(770, 571);
+            this.vasarlas_vegosz_lb.Name = "vasarlas_vegosz_lb";
+            this.vasarlas_vegosz_lb.Size = new System.Drawing.Size(414, 50);
+            this.vasarlas_vegosz_lb.TabIndex = 48;
+            this.vasarlas_vegosz_lb.Text = "Végösszeg: 0123456789.Ft";
             // 
             // Vasarlas
             // 
@@ -358,7 +360,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1262, 673);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.vasarlas_vegosz_lb);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.id_NUD);
             this.Controls.Add(this.label4);
@@ -416,6 +418,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown id_NUD;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label vasarlas_vegosz_lb;
     }
 }

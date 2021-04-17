@@ -54,7 +54,7 @@
             this.lb_fomenu.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_fomenu.Location = new System.Drawing.Point(544, 1);
             this.lb_fomenu.Name = "lb_fomenu";
-            this.lb_fomenu.Size = new System.Drawing.Size(142, 45);
+            this.lb_fomenu.Size = new System.Drawing.Size(196, 45);
             this.lb_fomenu.TabIndex = 1;
             this.lb_fomenu.Text = "Főmenü";
             // 
@@ -86,7 +86,7 @@
             this.fomenu_termek_btn.Name = "fomenu_termek_btn";
             this.fomenu_termek_btn.Size = new System.Drawing.Size(569, 289);
             this.fomenu_termek_btn.TabIndex = 3;
-            this.fomenu_termek_btn.Text = "Termék Ajánló";
+            this.fomenu_termek_btn.Text = "Termékajánló";
             this.fomenu_termek_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.fomenu_termek_btn.UseVisualStyleBackColor = false;
             this.fomenu_termek_btn.Click += new System.EventHandler(this.fomenu_termek_btn_Click);

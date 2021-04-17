@@ -16,11 +16,13 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
     public partial class Futar : Form
 
     {
+        
         private static List<Beolvas>  lista = new List<Beolvas>();
         MySqlConnection conn = null;
         MySqlCommand sql = null;
         public Futar()
         {
+
 
 
             
@@ -64,8 +66,12 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
 
         }
 
-        
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+
+        }
         private void futar_fomenu_btn_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -82,23 +88,46 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
 
         private void Futar_szamol_btn_Click(object sender, EventArgs e)
         {
-            StreamReader beolvas = new StreamReader("teszttt.csv");
-            beolvas.ReadLine();
-            beolvas.ReadLine();
-            beolvas.ReadLine();
-            beolvas.ReadLine();
-            beolvas.ReadLine();
-            beolvas.ReadLine();
-            beolvas.ReadLine();
-            while (!beolvas.EndOfStream)
+            if (lista.Count < 1)
             {
-                string sor = beolvas.ReadLine();
-                Beolvas b = new Beolvas(sor);
+                if (futar_exelbe_tb.Text == "")
+                {
+                    MessageBox.Show("Nincs megadva adatbázis");
+                }
+                else
+                {
+                    StreamReader beolvas = new StreamReader(futar_exelbe_tb.Text);
+                    beolvas.ReadLine();
+                    beolvas.ReadLine();
+                    beolvas.ReadLine();
+                    beolvas.ReadLine();
+                    beolvas.ReadLine();
+                    beolvas.ReadLine();
+                    beolvas.ReadLine();
+                    while (!beolvas.EndOfStream)
+                    {
+                        string sor = beolvas.ReadLine();
+                        Beolvas b = new Beolvas(sor);
+
+                        lista.Add(b);
+
+                    }
+                }
+
                 
-                lista.Add(b);
                 
             }
-            
+           
+
+
+
+
+            int bk = 0;
+            int kp = 0;
+            int cimpenz = 0;
+            int bevetel = 0;
+            leado_lb.Text = "Leadó: 0";
+            kereset_lb.Text = "Kereset: 0";
 
 
 
@@ -106,10 +135,7 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
             int uzemanyag = ((Convert.ToInt32(kp_nud.Value)/100) * Convert.ToInt32(uzemanyag_nud.Value) * 7);
             uzemanyag_lb.Text = "Üzemanyag: " + uzemanyag;
             oraber_lb.Text = "Órabér: " + oraber;
-            int bk = 0;
-            int kp = 0;
-            int cimpenz = 0;
-            int bevetel = 0;
+            
 
             for (int i = 0; i < lista.Count; i++)
             {
@@ -144,6 +170,7 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
 
 
         }
+                
             }
             
 
@@ -153,6 +180,8 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
             bevetel_lb.Text = "Napi Bevétel: " + bevetel;
 
 
+            
+               
             
 
 
@@ -166,11 +195,9 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
-        
-
     }
 }

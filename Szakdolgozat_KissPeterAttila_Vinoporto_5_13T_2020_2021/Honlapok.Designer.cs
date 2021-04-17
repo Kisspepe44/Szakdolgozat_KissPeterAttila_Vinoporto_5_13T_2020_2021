@@ -54,7 +54,7 @@
             this.lb_honlapok.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_honlapok.Location = new System.Drawing.Point(539, 1);
             this.lb_honlapok.Name = "lb_honlapok";
-            this.lb_honlapok.Size = new System.Drawing.Size(181, 45);
+            this.lb_honlapok.Size = new System.Drawing.Size(236, 45);
             this.lb_honlapok.TabIndex = 2;
             this.lb_honlapok.Text = "Honlapok";
             // 

@@ -50,9 +50,7 @@
             this.kereset_lb = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.uzemanyag_nud = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
             this.Futar_szamol_btn = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fomenuvonal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kp_nud)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.munkaido_nud)).BeginInit();
@@ -133,9 +131,10 @@
             this.label1.Font = new System.Drawing.Font("Segoe Print", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(724, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(489, 43);
+            this.label1.Size = new System.Drawing.Size(411, 43);
             this.label1.TabIndex = 13;
-            this.label1.Text = "Exel pontos neve. (Pl.:2021.01.27.xlsx)";
+            this.label1.Text = "Exel pontos neve. (Pl.:teszttt.csv)";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -172,7 +171,6 @@
             this.label3.Size = new System.Drawing.Size(363, 50);
             this.label3.TabIndex = 16;
             this.label3.Text = "Munkaidő (30p/egység):";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // munkaido_nud
             // 
@@ -296,24 +294,12 @@
             this.uzemanyag_nud.Size = new System.Drawing.Size(205, 30);
             this.uzemanyag_nud.TabIndex = 27;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DarkOrange;
-            this.button1.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(1042, 604);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(189, 43);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Futár Címei";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // Futar_szamol_btn
             // 
             this.Futar_szamol_btn.BackColor = System.Drawing.Color.DarkOrange;
             this.Futar_szamol_btn.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Futar_szamol_btn.ForeColor = System.Drawing.Color.Black;
-            this.Futar_szamol_btn.Location = new System.Drawing.Point(394, 578);
+            this.Futar_szamol_btn.Location = new System.Drawing.Point(474, 578);
             this.Futar_szamol_btn.Name = "Futar_szamol_btn";
             this.Futar_szamol_btn.Size = new System.Drawing.Size(189, 43);
             this.Futar_szamol_btn.TabIndex = 29;
@@ -321,28 +307,13 @@
             this.Futar_szamol_btn.UseVisualStyleBackColor = false;
             this.Futar_szamol_btn.Click += new System.EventHandler(this.Futar_szamol_btn_Click);
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.DarkOrange;
-            this.button2.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(602, 578);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(189, 43);
-            this.button2.TabIndex = 30;
-            this.button2.Text = "Nullázás";
-            this.button2.UseVisualStyleBackColor = false;
-           
-            // 
             // Futar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1262, 673);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.Futar_szamol_btn);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.uzemanyag_nud);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.kereset_lb);
@@ -401,8 +372,6 @@
         private System.Windows.Forms.Label kereset_lb;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.NumericUpDown uzemanyag_nud;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Futar_szamol_btn;
-        private System.Windows.Forms.Button button2;
     }
 }

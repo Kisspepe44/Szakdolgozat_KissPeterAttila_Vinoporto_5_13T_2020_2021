@@ -123,7 +123,7 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
         {
 
             sqll = connn.CreateCommand();
-            MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT Termekcsoport, Megnevezes, italpincer FROM `arkepzes` WHERE Megnevezes like '%" + textBox1.Text + "%'", connn);
+            MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT Termekcsoport, Megnevezes, italpincer FROM `arkepzes` WHERE Megnevezes like \"%" + textBox1.Text + "%\"", connn);
 
             DataSet ds = new DataSet();
             adapter.Fill(ds, "arkepzes");
@@ -132,7 +132,7 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
 
 
             vasarlas_termek_cb.Items.Clear();
-            sql.CommandText = "SELECT * FROM `arkepzes` where Megnevezes like '%" + textBox1.Text + "%'";
+            sql.CommandText = "SELECT * FROM `arkepzes` where Megnevezes like \"%" + textBox1.Text + "%\"";
             using (MySqlDataReader dr = sql.ExecuteReader())
             {
 
@@ -166,6 +166,7 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
                 connn.Close();
 
             }
+            vasarlas_vegosz_lb.Text = "Végösszeg: 0 Ft";
 
 
 
@@ -192,6 +193,12 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
                 connn.Close();
 
             }
+            sqll.CommandText = "SELECT sum(`Ar`*`Darabszam`) as 'osszeg' FROM `kosar`";
+            connn.Open();
+
+            int vegosszeg = Convert.ToInt32(sqll.ExecuteScalar());
+
+            vasarlas_vegosz_lb.Text = "Végösszeg: " + vegosszeg + " Ft";
 
 
 
@@ -221,19 +228,23 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string sor = vasarlas_termek_cb.Text;
-            string[] bontottsor = sor.Split('#');
-            string megnevezes = bontottsor[0];
-            string sor2 = bontottsor[1];
-            string[] bontottsor2 = sor2.Split(' ');
-            int ar = Convert.ToInt32(bontottsor2[0]);
+            
 
 
             for (int i = 0; i < 2; i++)
             {
                 if (i < 1)
                 {
-                    sqll = connn.CreateCommand();
+                    if (vasarlas_termek_cb.Text != "")
+                    {
+                        string sor = vasarlas_termek_cb.Text;
+                        string[] bontottsor = sor.Split('#');
+                        string megnevezes = bontottsor[0];
+                        string sor2 = bontottsor[1];
+                        string[] bontottsor2 = sor2.Split(' ');
+                        int ar = Convert.ToInt32(bontottsor2[0]);
+
+                        sqll = connn.CreateCommand();
                     MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * FROM `kosar`", connn);
 
                     DataSet ds = new DataSet();
@@ -241,11 +252,16 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
                     dataGridView1.DataSource = ds.Tables["kosar"];
                     connn.Close();
 
-                    sqll.CommandText = "INSERT INTO `kosar` (`ID`, `Megnevezes`, `Ar`, `Darabszam`) VALUES (NULL, '" + megnevezes + "', '" + ar + "', '" + Termek_min_nup.Value + "');";
+                    sqll.CommandText = "INSERT INTO `kosar` (`ID`, `Megnevezes`, `Ar`, `Darabszam`) VALUES (NULL, \"" + megnevezes + "\", '" + ar + "', '" + Termek_min_nup.Value + "');";
                     sqll.Connection = connn;
                     connn.Open();
                     sqll.ExecuteNonQuery();
                     connn.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Nem választott ki terméket");
+                    }
                 }
                 else
                 {
@@ -259,6 +275,12 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
                 }
 
             }
+            sqll.CommandText = "SELECT sum(`Ar`*`Darabszam`) as 'osszeg' FROM `kosar`";
+            connn.Open();
+            
+            int vegosszeg = Convert.ToInt32(sqll.ExecuteScalar());
+
+            vasarlas_vegosz_lb.Text = "Végösszeg: "+vegosszeg+" Ft";
 
 
 
@@ -266,62 +288,9 @@ namespace Szakdolgozat_KissPeterAttila_Vinoporto_5_13T_2020_2021
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            int osszeg = 0;
-            string sql = "SELECT SUM(`Ar`*`Darabszam`) FROM `kosar` WHERE 1";
 
-            
-
-            for (int i = 0; i < 2; i++)
-            {
-                if (i < 1)
-                {
-                    MySqlCommand cmdd = new MySqlCommand(sql, connn);
-                    MySqlDataReader rdd = cmdd.ExecuteReader();
-                    if (rdd.HasRows)
-                    {
-                        rdd.Read();
-                        osszeg = rdd.GetInt32(0);
-                    }
-                    connn.Close();
-                    
-
-                    sqll = connn.CreateCommand();
-                    MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * FROM `kosar`", connn);
-
-                    DataSet ds = new DataSet();
-                    adapter.Fill(ds, "kosar");
-                    dataGridView1.DataSource = ds.Tables["kosar"];
-                    connn.Close();
-
-
-
-
-                    sqll.CommandText = "INSERT INTO `kosar` (`ID`, `Megnevezes`, `Ar`, `Darabszam`) VALUES (NULL, 'Végösszeg', '" + osszeg + "', '1');";
-                    sqll.Connection = connn;
-                    connn.Open();
-                    sqll.ExecuteNonQuery();
-                    connn.Close();
-
-
-
-
-                }
-                else
-                {
-                    sqll = connn.CreateCommand();
-                    MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * FROM `kosar`", connn);
-
-                    DataSet ds = new DataSet();
-                    adapter.Fill(ds, "kosar");
-                    dataGridView1.DataSource = ds.Tables["kosar"];
-                    connn.Close();
-                }
-
-
-
-
-            }
         }
     }
-} 
+    }
+
 
